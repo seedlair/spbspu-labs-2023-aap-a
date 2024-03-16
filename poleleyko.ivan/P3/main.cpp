@@ -78,6 +78,7 @@ int main()
       {
         cstring[i] = temp_cstring[i];
       }
+
       delete[] temp_cstring;
     }
 
@@ -87,7 +88,6 @@ int main()
     if (ch == '\n')
     {
       cstring[step - 1] = '\0';
-      break;
     }
   }
 
