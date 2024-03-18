@@ -59,7 +59,3 @@ int poleleyko::count_row_not_same_numbers(int* matrix, size_t count_of_rows, siz
     }
     return count;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> refs/remotes/origin/poleleyko.ivan/P4
