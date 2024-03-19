@@ -5,10 +5,10 @@
 
 void poleleyko::output_matrix(std::ostream& output_stream, int* array, size_t size_of_array)
 {
-  for(size_t i = 0; i < size_of_array; ++i)
+  for (size_t i = 0; i < size_of_array; ++i)
   {
     output_stream << array[i];
-    if(!output_stream)
+    if (!output_stream)
     {
       throw std::runtime_error("Error input");
     }

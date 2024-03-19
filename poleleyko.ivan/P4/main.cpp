@@ -12,7 +12,7 @@ int main(int argc, char* argv[])
   size_t count_of_rows = 0;
   size_t count_of_cols = 0;
 
-  if(argc != 4)
+  if (argc != 4)
   {
     std::cerr << "Invalid count of parameters\n";
     return 1;
@@ -31,7 +31,7 @@ int main(int argc, char* argv[])
 
   input_stream >> count_of_rows >> count_of_cols;
 
-  if(!input_stream)
+  if (!input_stream)
   {
     std::cerr << "Error input\n";
     return 1;
@@ -44,7 +44,7 @@ int main(int argc, char* argv[])
   try
   {
 
-    if(number_of_task == 1)
+    if (number_of_task == 1)
     {
       array = new int[size_of_array];
     }
@@ -56,13 +56,13 @@ int main(int argc, char* argv[])
     poleleyko::read_matrix(input_stream, array, size_of_array);
     poleleyko::spiral_matrix_transformation(array, count_of_rows, count_of_cols);
 
-    output_stream << count_of_rows << count_of_cols << array << '\n' <<
-    poleleyko::count_row_not_same_numbers
+    output_stream << count_of_rows << count_of_cols << array << '\n' << \
+    poleleyko::count_row_not_same_numbers \
     (array, count_of_rows, count_of_cols);
 
-    if(!output_stream)
+    if (!output_stream)
     {
-      if(number_of_task == 1)
+      if (number_of_task == 1)
       {
         array = new int[size_of_array];
       }
