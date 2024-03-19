@@ -1,8 +1,8 @@
 #include "tasks.hpp"
 #include <cstddef>
 
-void poleleyko::spiral_matrix_transformation(int* matrix, size_t count_of_rows,
-size_t count_of_cols)
+void poleleyko::spiral_matrix_transformation \
+(int* matrix, size_t count_of_rows, size_t count_of_cols)
 {
   size_t step = 1;
   size_t row = 0;
