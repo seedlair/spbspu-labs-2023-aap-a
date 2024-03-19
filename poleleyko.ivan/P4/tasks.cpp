@@ -41,22 +41,22 @@ void poleleyko::spiral_matrix_transformation \
 
 int poleleyko::count_row_not_same_numbers(int* matrix, size_t count_of_rows, size_t count_of_cols)
 {
-    int count = 0;
-    for (size_t i = 0; i < count_of_rows; ++i)
+  int count = 0;
+  for (size_t i = 0; i < count_of_rows; ++i)
+  {
+    bool has_consecutive_duplicates = false;
+    for (size_t j = 1; j < count_of_cols; ++j)
     {
-        bool has_consecutive_duplicates = false;
-        for (size_t j = 1; j < count_of_cols; ++j)
+      if (matrix[i * count_of_cols + j] == matrix[i * count_of_cols + j - 1])
         {
-            if (matrix[i * count_of_cols + j] == matrix[i * count_of_cols + j - 1])
-            {
-                has_consecutive_duplicates = true;
-                break;
-            }
-        }
-        if (!has_consecutive_duplicates)
-        {
-            ++count;
+          has_consecutive_duplicates = true;
+          break;
         }
     }
-    return count;
+    if (!has_consecutive_duplicates)
+    {
+      ++count;
+    }
+  }
+  return count;
 }
