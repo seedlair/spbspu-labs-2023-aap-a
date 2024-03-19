@@ -53,14 +53,13 @@ int main(int argc, char* argv[])
       array = based_matrix;
     }
 
-    poleleyko::read_matrix \
-    (input_stream, array, size_of_array);
-    poleleyko::spiral_matrix_transformation \
+    poleleyko::read_matrix(input_stream, array, size_of_array);
+    poleleyko::spiral_matrix_transformation
     (array, count_of_rows, count_of_cols);
 
-    output_stream << count_of_rows \
-    << count_of_cols << array << '\n' \
-    << poleleyko::count_row_not_same_numbers \
+    output_stream << count_of_rows
+    << count_of_cols << array << '\n'
+    << poleleyko::count_row_not_same_numbers
     (array, count_of_rows, count_of_cols);
 
     if (!output_stream)
