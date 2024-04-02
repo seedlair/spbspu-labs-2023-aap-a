@@ -7,7 +7,7 @@
 namespace poleleyko
 {
 
-  void output_matrix(std::ostream& input_stream, int* array, size_t size_of_array);
+  void output_matrix(std::ostream& input_stream, const int* array, const size_t size_of_array);
 
 }
 
